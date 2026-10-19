@@ -25,6 +25,7 @@ A simple personal expense tracking application built with Python and Streamlit. 
 Expense-Tracker/
 ├── main.py
 ├── expenses.db
+├── settings.db
 ├── README.md
 └── ...
 ```
