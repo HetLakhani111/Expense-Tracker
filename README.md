@@ -7,8 +7,10 @@ A simple personal expense tracking application built with Python and Streamlit. 
 - Add expense date, product name, price, and notes
 - Save expenses to a local SQLite database
 - View saved transactions in a table
-- Clear all saved records from the database
-- Simple and lightweight interface for personal budgeting
+- Set and save a monthly budget
+- See remaining budget based on the total of saved expenses
+- Clear all saved expenses and the saved budget
+- Simple, lightweight interface for personal budgeting
 
 ## Tech Stack
 
@@ -16,7 +18,6 @@ A simple personal expense tracking application built with Python and Streamlit. 
 - Streamlit
 - SQLite
 - Pandas
-- Plotly
 
 ## Project Structure
 
@@ -67,13 +68,16 @@ http://localhost:8501
 ## How It Works
 
 - The app creates an `expenses.db` SQLite database automatically when started.
+- Expense records and the monthly budget are stored in this database.
 - Each expense entry includes:
   - date
   - product name
   - price
   - note
+- Set the monthly budget in the app; it is saved and loaded the next time you run the app.
+- The remaining budget is calculated as the monthly budget minus the sum of all saved expenses.
 - You can toggle the saved expenses table from the app interface.
-- Use the clear button to reset all saved data.
+- Use **Clear Saved Expenses** to delete all expense records and reset the saved budget.
 
 ## Features to be Added
 
@@ -83,8 +87,8 @@ Planned enhancements for this project include:
 - category-based tracking
 - charts and analytics dashboard
 - CSV export and import
-- budget alerts and spending limits
 - search and filter by date or product
+- budget alerts and spending limits
 
 ## Notes
 
