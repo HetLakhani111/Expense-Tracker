@@ -18,6 +18,7 @@ A simple personal expense tracking application built with Python and Streamlit. 
 - Streamlit
 - SQLite
 - Pandas
+- Plotly
 
 ## Project Structure
 
